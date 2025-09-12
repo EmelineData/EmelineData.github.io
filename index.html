@@ -1,0 +1,57 @@
+<!doctype html>
+</article>
+))}
+</div>
+</div>
+</section>
+);
+}
+
+
+function Skills() {
+return (
+<section className="max-w-3xl mx-auto px-6 py-10 text-center">
+<h2 className="text-2xl font-semibold mb-4">💡 Compétences</h2>
+<p className="text-gray-700">Python (Pandas, NumPy, Matplotlib), Power BI, R, GitHub</p>
+</section>
+);
+}
+
+
+function Contact() {
+return (
+<footer className="bg-gray-900 text-gray-100 text-center p-8 mt-10">
+<div className="max-w-3xl mx-auto px-6">
+<h2 className="text-xl font-semibold mb-2">📬 Contact</h2>
+<p className="text-sm">
+💼 <a className="text-blue-300 hover:underline" href={www.linkedin.com/in/emeline-aht-phd}>LinkedIn</a>
+{' '}|{' '}
+✉️ <a className="text-blue-300 hover:underline" href={`mailto:${ahtchine.e@gmail.com}`}>{SITE.email}</a>
+</p>
+<p className="mt-4 text-xs text-gray-400">Site généré sans compilation — édite le fichier index.html pour personnaliser.</p>
+</div>
+</footer>
+);
+}
+
+
+function App() {
+return (
+<div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+<Header />
+<main>
+<About />
+<Projects />
+<Skills />
+</main>
+<Contact />
+</div>
+);
+}
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+</script>
+</body>
+</html>
